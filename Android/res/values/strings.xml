@@ -326,7 +326,7 @@
     <string name="climb_rate_label">Climb Rate</string>
     <string name="altitude_label">Altitude</string>
     <string name="meter_unit">m</string>
-    <string name="speed_unit">m/s</string>
+    <string name="speed_unit">km/h</string>
     <string name="ground_speed_label">Ground Speed</string>
     <string name="air_speed_label">Air Speed</string>
     <string name="default_angle_value">--°</string>

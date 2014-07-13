@@ -35,8 +35,8 @@ public class Speed extends DroneVariable {
 
 	public void setGroundAndAirSpeeds(double groundSpeed, double airSpeed,
 			double climb) {
-		this.groundSpeed = groundSpeed;
-		this.airSpeed = airSpeed;
+		this.groundSpeed = groundSpeed * 3.6;
+		this.airSpeed = airSpeed * 3.6;
 		this.verticalSpeed = climb;
 	}
 }

@@ -13,7 +13,7 @@
         android:title="@string/pref_map_type"/>
 
     <CheckBoxPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:key="@string/pref_advanced_use_offline_maps_key"
         android:summary="@string/pref_advanced_use_offline_maps_summary"
         android:title="@string/pref_advanced_use_offline_maps"/>

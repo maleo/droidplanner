@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/transparentLayout"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-
+    android:layout_height="wrap_content"
+    android:visibility="visible" >
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -137,17 +136,19 @@
 
         <RelativeLayout
             android:id="@+id/air_speed_layout"
-            android:layout_below="@+id/ground_speed_layout"
-            android:layout_marginBottom="3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rollValueText"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/aiView"
+            android:layout_below="@+id/ground_speed_layout"
+            android:layout_marginBottom="3dp"
             android:background="@drawable/air_speed_bg"
+            android:baselineAligned="true"
+            android:paddingBottom="1dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:paddingBottom="1dp"
-            android:layout_alignLeft="@+id/rollValueText"
-            android:layout_alignRight="@+id/aiView"
-            android:baselineAligned="true">
+            android:visibility="gone" >
 
             <TextView
                 android:id="@+id/airSpeedValue"

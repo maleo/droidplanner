@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
     android:background="@drawable/mission_control_bg"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:visibility="gone" >
 
 	<Button
 	    android:id="@+id/mc_joystickBtn"
