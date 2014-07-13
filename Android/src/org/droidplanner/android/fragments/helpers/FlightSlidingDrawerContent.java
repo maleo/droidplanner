@@ -73,7 +73,7 @@ public class FlightSlidingDrawerContent extends Fragment {
 				return mContext.getString(R.string.flight_modes_label);
 
 			default:
-				return null;
+				return  mContext.getString(R.string.flight_modes_label);
 			}
 		}
 	}
