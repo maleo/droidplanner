@@ -54,7 +54,7 @@ public class FlightSlidingDrawerContent extends Fragment {
 				return new FlightModePanel();
 
 			default:
-				return null;
+				return new FlightModePanel();
 			}
 		}
 
