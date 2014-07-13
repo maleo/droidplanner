@@ -43,7 +43,7 @@
 			android:layout_height="wrap_content"
 			android:text="@string/Pause"
 	        android:background="@drawable/button_mode_options"
-        	android:visibility="visible"
+        	android:visibility="gone"
 			/>
 
 	</LinearLayout>

@@ -46,6 +46,7 @@ public class FlightSlidingDrawerContent extends Fragment {
 
 		@Override
 		public Fragment getItem(int i) {
+			/*
 			switch (i) {
 			case 0:
 				return new TelemetryFragment();
@@ -54,8 +55,10 @@ public class FlightSlidingDrawerContent extends Fragment {
 				return new FlightModePanel();
 
 			default:
-				return new FlightModePanel();
+				return null;
 			}
+			*/
+			return new TelemetryFragment();
 		}
 
 		@Override
@@ -65,6 +68,7 @@ public class FlightSlidingDrawerContent extends Fragment {
 
 		@Override
 		public CharSequence getPageTitle(int position) {
+			/*
 			switch (position) {
 			case 0:
 				return mContext.getString(R.string.telemetry_label);
@@ -73,8 +77,9 @@ public class FlightSlidingDrawerContent extends Fragment {
 				return mContext.getString(R.string.flight_modes_label);
 
 			default:
-				return  mContext.getString(R.string.flight_modes_label);
-			}
+				return null;
+			}*/
+			return mContext.getString(R.string.telemetry_label);
 		}
 	}
 }
