@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"    >
+    android:layout_height="match_parent" >
 
     <android.support.v4.view.ViewPager
+        android:id="@+id/sliding_drawer_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/sliding_drawer_content"
-        android:layout_above="@+id/sliding_drawer_content_shadow">
+        android:layout_above="@+id/sliding_drawer_content_shadow" >
 
         <android.support.v4.view.PagerTitleStrip
             android:id="@+id/pager_title_strip"
@@ -16,34 +16,62 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:background="#33b5e5"
-            android:textColor="#fff"
+            android:paddingBottom="4dp"
             android:paddingTop="4dp"
-            android:paddingBottom="4dp"/>
+            android:textColor="#fff" />
     </android.support.v4.view.ViewPager>
-    
-    <TabHost >
-      <LinearLayout 
-        android:orientation="vertical" 
-        android:layout_width="match_parent" 
-        android:layout_height="match_parent"> 
- 
-        <TabWidget android:id="@android:id/tabs" 
-            android:layout_width="match_parent" 
-            android:layout_height="wrap_content" 
-        /> 
- 
-        <FrameLayout android:id="@android:id/tabcontent" 
-            android:layout_width="match_parent" 
-            android:layout_height="0dip" 
-            android:layout_weight="1" 
-        /> 
-    </LinearLayout> 
-    </TabHost>
+
     <ImageView
         android:id="@+id/sliding_drawer_content_shadow"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
         android:scaleType="fitXY"
-        android:src="@drawable/title_bar_shadow"
-        android:layout_alignParentBottom="true"/>
+        android:src="@drawable/title_bar_shadow" />
+
+    <TabHost
+        android1:id="@android:id/tabhost"
+        android1:layout_width="match_parent"
+        android1:layout_height="match_parent"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginTop="38dp" >
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:orientation="vertical" >
+
+            <TabWidget
+                android1:id="@android:id/tabs"
+                android1:layout_width="match_parent"
+                android1:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android1:id="@android:id/tabcontent"
+                android1:layout_width="match_parent"
+                android1:layout_height="match_parent" >
+
+                <LinearLayout
+                    android1:id="@+id/tab1"
+                    android1:layout_width="match_parent"
+                    android1:layout_height="match_parent" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android1:id="@+id/tab2"
+                    android1:layout_width="match_parent"
+                    android1:layout_height="match_parent" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android1:id="@+id/tab3"
+                    android1:layout_width="match_parent"
+                    android1:layout_height="match_parent" >
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
 </RelativeLayout>
