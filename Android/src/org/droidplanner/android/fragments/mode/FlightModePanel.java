@@ -160,7 +160,6 @@ public class FlightModePanel extends Fragment implements OnDroneListener {
 			}
 		}
 
-		getChildFragmentManager().beginTransaction()
-				.replace(R.id.modeInfoPanel, infoPanel).commit();
+		//getChildFragmentManager().beginTransaction().replace(R.id.modeInfoPanel, infoPanel).commit();
 	}
 }
