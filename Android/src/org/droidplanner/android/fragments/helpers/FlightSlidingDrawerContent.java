@@ -48,11 +48,9 @@ public class FlightSlidingDrawerContent extends Fragment {
 		public Fragment getItem(int i) {
 			switch (i) {
 			case 0:
-				return new TelemetryFragment();
-
-			case 1:
 				return new FlightModePanel();
-
+			case 1:
+				return new TelemetryFragment();
 			default:
 				return null;
 			}
