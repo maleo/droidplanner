@@ -20,24 +20,34 @@
 	    	android:layout_height="wrap_content"
 	    	tools:ignore="UselessParent"
             style="@style/tinyText">
+
            	<LinearLayout
-                style="@style/tinyText"
-                android:id="@+id/zero_to_one_hundred_text"
-                android:orientation="vertical" >
+           	    android:id="@+id/zero_to_one_hundred_text"
+           	    style="@style/tinyText"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content"
+           	    android:orientation="vertical" >
+
  				<TextView
                 	android:id="@+id/zero_to_one_hundred"
                     style="@style/tinyText"
+            	    android:layout_width="wrap_content"
+           	    	android:layout_height="wrap_content"                   
                     android:text="0 to 100km/h" />
            </LinearLayout>
  
            <LinearLayout
                style="@style/tinyText"
                android:id="@+id/eighty_to_zero"
+               android:layout_width="wrap_content"
+           	   android:layout_height="wrap_content"
                android:orientation="vertical" >
  
                <TextView
                    android:id="@+id/eighty_to_zero_text"
                    style="@style/tinyText"
+           	    	android:layout_width="wrap_content"
+           	    	android:layout_height="wrap_content"
                    android:text="80km/h to 0" />
                </LinearLayout>
  
