@@ -65,10 +65,10 @@ public class FlightSlidingDrawerContent extends Fragment {
 		public CharSequence getPageTitle(int position) {
 			switch (position) {
 			case 0:
-				return mContext.getString(R.string.telemetry_label);
+				return mContext.getString(R.string.flight_modes_label);
 
 			case 1:
-				return mContext.getString(R.string.flight_modes_label);
+				return mContext.getString(R.string.telemetry_label);
 
 			default:
 				return null;
