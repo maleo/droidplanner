@@ -13,6 +13,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.MAVLink.Messages.ApmModes;
 
@@ -25,6 +26,10 @@ public class FlightModePanel extends Fragment implements OnDroneListener {
 	 * This is the parent activity for this fragment.
 	 */
 	private SuperUI mParentActivity;
+	
+	private TextView groundSpeed;
+	private TextView airSpeed;
+	private Drone drone;
 
 	@Override
 	public void onAttach(Activity activity) {
@@ -48,8 +53,12 @@ public class FlightModePanel extends Fragment implements OnDroneListener {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.fragment_flight_mode_panel, container,
+		View view = inflater.inflate(R.layout.fragment_flight_mode_panel, container,
 				false);
+		groundSpeed = (TextView) view.findViewById(R.id.groundSpeedValue);
+		airSpeed = (TextView) view.findViewById(R.id.airSpeedValue);
+		drone = ((DroidPlannerApp) getActivity().getApplication()).getDrone();
+		return view;
 	}
 
 	@Override
